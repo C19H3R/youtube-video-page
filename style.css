@@ -1,0 +1,4 @@
+body {
+   --youtube-background: #181818;
+   background-color: var(--youtube-background);
+}
