@@ -9,116 +9,123 @@
    </head>
    <body>
       <header>
-         <div>
-            <img />
-            <img />
+         <div class="horizontal-flex txt-big">
+            <img src="./assets/svgs/MenuIcon.svg" class="icon" />
+            <img src="./assets/svgs/YoutubeLogo.svg" id="youtube-logo" />
          </div>
-         <div>
-            <input />
-            <button><img /></button>
-         </div>
-         <div>
-            <img />
-            <img />
-            <div>
-               <span />
-               <img />
+         <div class="horizontal-flex">
+            <div id="search-bar">
+               <input placeholder="Search" />
+               <span>
+                  <img src="./assets/svgs/SearchIcon.svg" class="icon" />
+               </span>
             </div>
-            <img />
+            <button id="mic-search-btn">
+               <img src="./assets/svgs/MicIcon.svg" class="icon" />
+            </button>
+         </div>
+         <div class="horizontal-flex">
+            <img src="./assets/svgs/UploadIcon.svg" class="icon" />
+            <img src="./assets/svgs/AppsIcon.svg" class="icon" />
+            <div class="icon-w-superscript">
+               <span>9+</span>
+               <img src="./assets/svgs/NotifBellIcon.svg" class="icon" />
+            </div>
+            <img src="./assets/images/spiderman.png" class="profile-photo" />
          </div>
       </header>
       <main>
-         <div>
-            <!-- V video section V -->
+         <div class="left-part vertical-flex">
             <div>
-               <!-- <video></video> -->
-               <div>
-                  <div>
-                     <span>
-                        <!-- video Name -->
-                     </span>
-                     <span>
-                        <!-- views and date -->
-                     </span>
+               <iframe
+                  width="1280"
+                  height="720"
+                  src="https://www.youtube.com/embed/QkkoHAzjnUs"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+               ></iframe>
+
+               <div class="video-stats border-down">
+                  <div class="vertical-flex">
+                     <span class="txt-big">
+                        Grand Theft Auto V Trailer
+                        <img
+                           src="./assets//svgs/VerifiedIcon.svg"
+                           class="icon-sm"
+                     /></span>
+                     <span class="txt-sm"> 79,438,741 views - Nov 2, 2011 </span>
                   </div>
-                  <div>
+                  <div class="horizontal-flex txt-big">
                      <div>
-                        <img />
-                        <span>
-                           <!-- number of likes -->
-                        </span>
+                        <img src="./assets/svgs/LikeIcon.svg" class="icon" />
+                        <span> 1.5M </span>
                      </div>
                      <div>
-                        <img />
-                        <span>
-                           <!-- Dislike -->
-                        </span>
+                        <img src="./assets/svgs/DislikeIcon.svg" class="icon" />
+                        <span> DISLIKE </span>
                      </div>
                      <div>
-                        <img />
-                        <span>
-                           <!-- share -->
-                        </span>
+                        <img src="./assets/svgs/ShareIcon.svg" class="icon" />
+                        <span> SHARE </span>
                      </div>
                      <div>
-                        <img />
-                        <span>
-                           <!-- save -->
-                        </span>
+                        <img src="./assets/svgs/SaveIcon.svg" class="icon" />
+                        <span> SAVE </span>
                      </div>
                      <div>
-                        <img />
+                        <img src="./assets/svgs/MoreIcon.svg" class="icon" />
+                     </div>
+                  </div>
+               </div c>
+
+               <!-- V about channel V -->
+               <div class="border-down vertical-padding ">
+                  <div class="horizontal-flex-space-bw  bo">
+                     <div class="horizontal-flex">
+                        <img
+                           class="profile-photo"
+                           src="./assets/images/channelPhoto.jpg"
+                        />
+                        <div class="vertical-flex-sm">
+                           <span class="txt-big">
+                              Rockstar Games
+                              <img
+                                 src="./assets/svgs/VerifiedIcon.svg"
+                                 class="icon-sm"
+                              />
+                           </span>
+                           <span class="txt-sm">6.46M subscribers</span>
+                        </div>
+                     </div>
+                     <div>
+                        <button>SUBSCRIBE</button>
+                     </div>
+                  </div>
+                  <p class="txt-md">Grand Theft Auto V Trailer</p>
+                  <div class="grid-2-1">
+                     <div class="horizontal-flex dark-background">
+                        <img src="./assets/images/GTA_V_Poster.jpg" />
+                        <div class="vertical-flex-md">
+                           <span class="txt-big"> Grand Theft Auto V </span>
+                           <span class="txt-sm"> 2013 </span>
+                           <span class="txt-lnk"> BROWSE GAME > </span>
+                        </div>
+                     </div>
+                     <div class="horizontal-flex dark-background">
+                        <img
+                           src="./assets/images/Browse_Games.jpg"
+                           class="cricle-photo"
+                        />
+                        <div class="vertical-flex-md">
+                           <span class="txt-big" > GAMING </span>
+                           <span class="txt-lnk"> BROWSE ALL GAMES > </span>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-
-            <!-- V about channel V -->
-            <div>
-               <div>
-                  <div>
-                     <img />
-                     <div>
-                        <!-- channelName -->
-                        <!-- number of subscribers -->
-                     </div>
-                  </div>
-                  <div>
-                     <button>
-                        <!-- subscribe -->
-                     </button>
-                  </div>
-               </div>
-               <p></p>
-               <div>
-                  <div>
-                     <img />
-                     <div>
-                        <span>
-                           <!-- Name -->
-                        </span>
-                        <span>
-                           <!-- year -->
-                        </span>
-                        <span>
-                           <!-- Browse -->
-                        </span>
-                     </div>
-                  </div>
-                  <div>
-                     <img />
-                     <div>
-                        <span>
-                           <!-- Gaming -->
-                        </span>
-                        <span>
-                           <!-- Browse -->
-                        </span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
             <!-- V comment section V -->
             <div>
                <div>
@@ -183,6 +190,7 @@
                </div>
             </div>
          </div>
+
          <div>
             <div>
                <img />

@@ -1,4 +1,201 @@
+@font-face {
+   font-family: yt-font;
+   src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
 body {
    --youtube-background: #181818;
+   --header-background: #202020;
+   --searchbar-color: #121212;
+   --searchbtn-color: #323232;
+
    background-color: var(--youtube-background);
+   margin: 0;
+   color: white;
 }
+header {
+   background-color: var(--header-background);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+
+.icon {
+   filter: invert(100);
+   height: 28px;
+   vertical-align: middle;
+}
+.icon-sm {
+   filter: invert(100);
+   height: 22px;
+   vertical-align: middle;
+}
+.profile-photo {
+   max-width: 38px;
+   border-radius: 50%;
+}
+.cricle-photo {
+   max-width: 76px;
+   border-radius: 50%;
+}
+.dark-background {
+   background-color: var(--header-background);
+}
+.grid-2-1 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 14px;
+}
+
+.horizontal-flex {
+   display: flex;
+   gap: 18px;
+   align-items: center;
+   padding: 5px;
+}
+.horizontal-flex-space-bw {
+   display: flex;
+   justify-content: space-between;
+}
+.horizontal-flex-space-around {
+   display: flex;
+   justify-content: space-around;
+}
+.horizontal-flex-center {
+   display: flex;
+   justify-content: center;
+   gap: 18px;
+}
+
+.vertical-flex {
+   display: flex;
+   gap: 24px;
+   align-items: flex-start;
+   flex-direction: column;
+}
+
+.vertical-flex-sm {
+   display: flex;
+   gap: 5px;
+   align-items: flex-start;
+   flex-direction: column;
+}
+.vertical-flex-md {
+   display: flex;
+   gap: 12px;
+   align-items: flex-start;
+   flex-direction: column;
+}
+.vertical-flex-space-around {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.vertical-margin {
+   margin-top: 24px;
+   margin-bottom: 24px;
+}
+.vertical-margin-sm {
+   margin-top: 12px;
+   margin-bottom: 12px;
+}
+
+#youtube-logo {
+   max-height: 24px;
+}
+
+.left-part {
+   margin: 22px 22px 0 112px;
+}
+
+.video-container {
+   width: fit-content;
+   background-color: black;
+}
+.video-stats {
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+   padding: 16px 0;
+}
+.border-down {
+   border-bottom: 1px solid gray;
+}
+.vertical-padding {
+   padding-top: 14px;
+   padding-bottom: 14px;
+}
+
+.txt-big {
+   font-family: yt-font;
+   color: white;
+   font-size: larger;
+   font-weight: 600;
+}
+.txt-md {
+   font-family: yt-font;
+   color: white;
+   font-size: medium;
+}
+.txt-sm {
+   font-family: yt-font;
+   color: white;
+   font-size: small;
+   font-weight: 600;
+}
+.txt-lnk {
+   font-family: yt-font;
+   color: #969696;
+   font-size: large;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+
+/* #region search bar */
+#search-bar {
+   display: flex;
+   width: fit-content;
+}
+#search-bar > input,
+#search-bar > input::placeholder {
+   width: 640px;
+   border: 1px solid var(--searchbtn-color);
+   background-color: var(--youtube-background);
+   color: white;
+   font-size: 18px;
+   padding: 8px;
+}
+#search-bar > span {
+   background-color: var(--searchbtn-color);
+   padding: 0 14px;
+   display: flex;
+   align-items: center;
+}
+/* #endregion  */
+#mic-search-btn {
+   padding: 0;
+   border: 0;
+   background-color: rgb(95, 95, 95);
+   border-radius: 50%;
+   display: flex;
+   padding: 5px;
+}
+/* #region icon-w-superscript*/
+.icon-w-superscript {
+   position: relative;
+   width: fit-content;
+}
+.icon-w-superscript > span {
+   position: absolute;
+   display: block;
+   right: 0;
+   transform: translate(40%);
+   padding: 0 5px;
+   z-index: 1;
+   background-color: red;
+   font-size: 12px;
+   border-radius: 6px;
+   font-weight: bold;
+}
+/* #endregion */
