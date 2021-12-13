@@ -47,6 +47,11 @@ header {
    grid-template-columns: 1fr 1fr;
    gap: 14px;
 }
+.grid-auto-1 {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 14px;
+}
 
 .horizontal-flex {
    display: flex;
@@ -151,6 +156,22 @@ header {
    font-weight: 700;
    text-transform: capitalize;
 }
+.txt-lnk-sm {
+   font-family: yt-font;
+   color: #969696;
+   font-size: smaller;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+
+#comment-inpt,
+#comment-inpt::placeholder {
+   background-color: transparent;
+   color: white;
+   border: 0;
+   border-bottom: 1px solid black;
+   width: 100%;
+}
 
 /* #region search bar */
 #search-bar {
@@ -199,3 +220,15 @@ header {
    font-weight: bold;
 }
 /* #endregion */
+
+.personalized-tabs {
+   background-color: var(--searchbtn-color);
+   border: 2px solid black;
+   border-radius: 24px;
+   padding: 5px 10px;
+}
+
+.thumbnail_img {
+   aspect-ratio: 16/9;
+   width: 200px;
+}
